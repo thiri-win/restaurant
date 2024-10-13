@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/tailwindcss">
+        @layer utilities{
+            .title {
+                @apply capitalize font-semibold text-2xl my-8 py-6 relative text-center after:content-[''] after:block after:w-32 after:h-0.5 after:bg-gray-300 after:absolute after:top-full after:left-1/2 after:-translate-x-1/2;
+            }
+            .title span {
+                @apply text-orange-500 text-3xl;
+            }
+        }
+        h1 {
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header section -->
+    <header class="relative">
+        <nav class="flex flex-wrap justify-between items-center w-3/4 mx-auto p-4 bg-white/50">
+            <a href="#" class="text-yellow-700 text-3xl">Restaurant's</a>
+            <button class="text-orange-500 text-2xl block lg:hidden" id="toggle"><i class="fa-solid fa-bars"></i></button>
+            <ul class="w-full absolute top-full bg-white/50 hidden lg:static lg:bg-transparent lg:w-auto lg:block" id="menu">
+                <li class="lg:inline-block"><a href="#home" class="uppercase p-1 block">home</a></li>
+                <li class="lg:inline-block"><a href="#about" class="uppercase p-1 block">about us</a></li>
+                <li class="lg:inline-block"><a href="#blog" class="uppercase p-1 block">blog</a></li>
+                <li class="lg:inline-block"><a href="#menu" class="uppercase p-1 block">menu</a></li>
+                <li class="lg:inline-block"><a href="#news" class="uppercase p-1 block">news</a></li>
+                <li class="lg:inline-block"><a href="#contacts" class="uppercase p-1 block">contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- home -->
+    <section id="home" class="py-8">
+        <div class="container mx-auto">
+            <h1 class="uppercase mb-8">featured <span class="text-orange-500">work</span></h1>
+            <div class="owl-carousel">
+                <div class="h-64">
+                    <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZHxlbnwwfDF8MHx8fDA%3D" class="object-cover w-full h-full" alt="">
+                </div>
+                <div class="h-64">
+                    <img src="https://plus.unsplash.com/premium_photo-1675252369719-dd52bc69c3df?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zm9vZHxlbnwwfDF8MHx8fDA%3D" class="object-cover w-full h-full" alt="">
+                </div>
+                <div class="h-64">
+                    <img src="https://plus.unsplash.com/premium_photo-1673809798970-30c14cfd0ab6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZvb2R8ZW58MHwxfDB8fHww" class="object-cover w-full h-full" alt="">
+                </div>
+                <div class="h-64">
+                    <img src="https://images.unsplash.com/photo-1501200291289-c5a76c232e5f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZvb2R8ZW58MHwxfDB8fHww" class="object-cover w-full h-full" alt="">
+                </div>
+                <div class="h-64">
+                    <img src="https://plus.unsplash.com/premium_photo-1663858367001-89e5c92d1e0e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZvb2R8ZW58MHwxfDB8fHww" class="object-cover w-full h-full" alt="">
+                </div>
+                <div class="h-64">
+                    <img src="https://images.unsplash.com/photo-1487831169122-e8b4ec408390?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvb2R8ZW58MHwxfDB8fHww" class="object-cover w-full h-full" alt="">
+                </div>
+                <div class="h-64">
+                    <img src="https://images.unsplash.com/photo-1515692688679-6e42f517b64d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvb2R8ZW58MHwxfDB8fHww" class="object-cover w-full h-full" alt="">
+                </div>
+                <div class="h-64">
+                    <img src="https://images.unsplash.com/photo-1432457990754-c8b5f21448de?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D" class="object-cover w-full h-full" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-gray-100 py-20 text-center">
+        <div class="container mx-auto">
+            <img src="https://cdn.pixabay.com/photo/2015/05/20/14/23/baby-775503_1280.jpg" alt="" class="h-32 w-32 object-cover rounded-full border border-4 border-white mx-auto">
+            <h1 class="title">
+                Your
+                <span>Restaurant's</span> <br>
+                Website Has to look
+                <span>good</span>
+            </h1>
+            <p class="text-gray-400 w-3/4 mx-auto leading-7">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, nostrum aperiam illo dolores possimus culpa modi ullam. Soluta dicta, recusandae quidem reprehenderit odit similique debitis sunt atque maiores optio assumenda?
+            </p>
+        </div>
+    </section>
+
+    <section id="blog" class="bg-[url('https://cdn.pixabay.com/photo/2024/02/06/10/53/ai-generated-8556731_1280.jpg')] bg-no-repeat bg-cover">
+        <div class="container mx-auto">
+            <h1 class="title text-white">
+                latest <span>from</span> the <span>blog</span>
+            </h1>
+            <div class="flex flex-wrap">
+                <div class="flex overflow-hidden w-full lg:w-1/2">
+                    <img src="https://cdn.pixabay.com/photo/2014/05/18/11/25/pizza-346985_1280.jpg" alt="" class="w-1/2 h-full object-cover duration-1000 hover:rotate-12 hover:scale-[1.5]">
+                    <div class="w-1/2 bg-white p-8 relative after:content-[''] after:w-10 after:h-10 after:inline-block after:bg-white after:absolute after:left-0 after:top-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:rotate-45">
+                        <h2 class="title !text-xl !my-0 !mb-4">homestyle chicken pot pie</h2>
+                        <p class="text-center text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi harum ab facilis delectus sed provident cumque fugiat explicabo, similique fugit ea illum eius quos!</p>
+                    </div>
+                </div>
+                <div class="flex overflow-hidden w-full lg:w-1/2">
+                    <img src="https://cdn.pixabay.com/photo/2023/01/09/10/56/meal-7707134_1280.jpg" alt="" class="w-1/2 h-full object-cover duration-1000 hover:rotate-12 hover:scale-[1.5]">
+                    <div class="w-1/2 bg-white p-8 relative after:content-[''] after:w-10 after:h-10 after:inline-block after:bg-white after:absolute after:left-0 after:top-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:rotate-45">
+                        <h2 class="title !text-xl !my-0 !mb-4">homestyle chicken pot pie</h2>
+                        <p class="text-center text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi harum ab facilis delectus sed provident cumque fugiat explicabo, similique fugit ea illum eius quos!</p>
+                    </div>
+                </div>
+                <div class="flex overflow-hidden flex-row-reverse w-full lg:w-1/2">
+                    <img src="https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_1280.jpg" alt="" class="w-1/2 h-full object-cover duration-700 hover:rotate-12 hover:scale-[1.5]">
+                    <div class="w-1/2 bg-white p-8 relative after:content-[''] after:w-10 after:h-10 after:inline-block after:bg-white after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:translate-x-1/2 after:rotate-45">
+                        <h2 class="title !text-xl !my-0 !mb-4">homestyle chicken pot pie</h2>
+                        <p class="text-center text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi harum ab facilis delectus sed provident cumque fugiat explicabo, similique fugit ea illum eius quos!</p>
+                    </div>
+                </div>
+                <div class="flex overflow-hidden flex-row-reverse w-full lg:w-1/2">
+                    <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_1280.jpg" alt="" class="w-1/2 h-full object-cover duration-700 hover:rotate-12 hover:scale-[1.5]">
+                    <div class="w-1/2 bg-white p-8 relative after:content-[''] after:w-10 after:h-10 after:inline-block after:bg-white after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:translate-x-1/2 after:rotate-45">
+                        <h2 class="title !text-xl !my-0 !mb-4">homestyle chicken pot pie</h2>
+                        <p class="text-center text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi harum ab facilis delectus sed provident cumque fugiat explicabo, similique fugit ea illum eius quos!</p>
+                    </div>
+                </div>
+                <div class="flex overflow-hidden w-full lg:w-1/2">
+                    <img src="https://cdn.pixabay.com/photo/2022/08/17/07/10/strawberries-7391738_1280.jpg" alt="" class="w-1/2 h-full object-cover duration-700 hover:rotate-12 hover:scale-[1.5]">
+                    <div class="w-1/2 bg-white p-8 relative after:content-[''] after:w-10 after:h-10 after:inline-block after:bg-white after:absolute after:left-0 after:top-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:rotate-45">
+                        <h2 class="title !text-xl !my-0 !mb-4">homestyle chicken pot pie</h2>
+                        <p class="text-center text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi harum ab facilis delectus sed provident cumque fugiat explicabo, similique fugit ea illum eius quos!</p>
+                    </div>
+                </div>
+                <div class="flex overflow-hidden w-full lg:w-1/2">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg" alt="" class="w-1/2 h-full object-cover duration-700 hover:rotate-12 hover:scale-[1.5]">
+                    <div class="w-1/2 bg-white p-8 relative after:content-[''] after:w-10 after:h-10 after:inline-block after:bg-white after:absolute after:left-0 after:top-1/2 after:-translate-y-1/2 after:-translate-x-1/2 after:rotate-45">
+                        <h2 class="title !text-xl !my-0 !mb-4">homestyle chicken pot pie</h2>
+                        <p class="text-center text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi harum ab facilis delectus sed provident cumque fugiat explicabo, similique fugit ea illum eius quos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-16">
+        <div class="container mx-auto">
+            <h1 class="title">our <span>menu</span> the <span>price</span></h1>
+            <p class="text-sm text-center px-16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas at ab laborum officiis doloribus in mollitia saepe similique voluptatem tempora dignissimos rem, et, autem cumque fugit blanditiis. Sed, exercitationem ut?</p>
+            <h2 class="uppercase mt-32 mb-16">featured <span class="text-orange-500">on the week</span></h2>
+            <div>
+                <ul>
+                    <li class="mb-8">
+                        <div class="flex flex-wrap justify-between items-start relative mb-4">
+                            <p class="w-full md:w-auto text-2xl bg-white">Pancakes n' Such</p>
+                            <div class="border border-dotted border-gray-500 w-full absolute top-[80%] hidden md:block -z-10"></div>
+                            <span class="w-full md:w-auto text-sm">$ 25.00</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero soluta laudantium beatae maiores.</p>
+                    </li>
+                    <li class="mb-8">
+                        <div class="flex flex-wrap justify-between items-start relative mb-4">
+                            <p class="w-full md:w-auto text-2xl bg-white">Pancakes n' Such</p>
+                            <div class="border border-dotted border-gray-500 w-full absolute top-[80%] hidden md:block -z-10"></div>
+                            <span class="w-full md:w-auto text-sm">$ 25.00</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero soluta laudantium beatae maiores.</p>
+                    </li>
+                    <li class="mb-8">
+                        <div class="flex flex-wrap justify-between items-start relative mb-4">
+                            <p class="w-full md:w-auto text-2xl bg-white">Pancakes n' Such</p>
+                            <div class="border border-dotted border-gray-500 w-full absolute top-[80%] hidden md:block -z-10"></div>
+                            <span class="w-full md:w-auto text-sm">$ 25.00</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero soluta laudantium beatae maiores.</p>
+                    </li>
+                    <li class="mb-8">
+                        <div class="flex flex-wrap justify-between items-start relative mb-4">
+                            <p class="w-full md:w-auto text-2xl bg-white">Pancakes n' Such</p>
+                            <div class="border border-dotted border-gray-500 w-full absolute top-[80%] hidden md:block -z-10"></div>
+                            <span class="w-full md:w-auto text-sm">$ 25.00</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero soluta laudantium beatae maiores.</p>
+                    </li>
+                    <li class="mb-8">
+                        <div class="flex flex-wrap justify-between items-start relative mb-4">
+                            <p class="w-full md:w-auto text-2xl bg-white">Pancakes n' Such</p>
+                            <div class="border border-dotted border-gray-500 w-full absolute top-[80%] hidden md:block -z-10"></div>
+                            <span class="w-full md:w-auto text-sm">$ 25.00</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero soluta laudantium beatae maiores.</p>
+                    </li>
+                    <li class="mb-8">
+                        <div class="flex flex-wrap justify-between items-start relative mb-4">
+                            <p class="w-full md:w-auto text-2xl bg-white">Pancakes n' Such</p>
+                            <div class="border border-dotted border-gray-500 w-full absolute top-[80%] hidden md:block -z-10"></div>
+                            <span class="w-full md:w-auto text-sm">$ 25.00</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero soluta laudantium beatae maiores.</p>
+                    </li>
+                    <li class="mb-8">
+                        <div class="flex flex-wrap justify-between items-start relative mb-4">
+                            <p class="w-full md:w-auto text-2xl bg-white">Pancakes n' Such</p>
+                            <div class="border border-dotted border-gray-500 w-full absolute top-[80%] hidden md:block -z-10"></div>
+                            <span class="w-full md:w-auto text-sm">$ 25.00</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero soluta laudantium beatae maiores.</p>
+                    </li>
+                    <li class="mb-8">
+                        <div class="flex flex-wrap justify-between items-start relative mb-4">
+                            <p class="w-full md:w-auto text-2xl bg-white">Pancakes n' Such</p>
+                            <div class="border border-dotted border-gray-500 w-full absolute top-[80%] hidden md:block -z-10"></div>
+                            <span class="w-full md:w-auto text-sm">$ 25.00</span>
+                        </div>
+                        <p class="text-xs text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero soluta laudantium beatae maiores.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-right">
+                <a href="#" class="border border-orange-500 px-16 py-8 text-orange-500 uppercase mt-8 inline-block hover:bg-orange-500 hover:text-white">more info</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="py-16 bg-[url('https://cdn.pixabay.com/photo/2024/02/06/10/53/ai-generated-8556731_1280.jpg')] bg-no-repeat bg-cover bg-fixed">
+        <div class="container mx-auto">
+            <h1 class="title text-white">suscribe <span>to our</span> newsletter</h1>
+            <p class="text-center mb-8 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="">
+                <form action="" class="bg-sky-500 w-1/2 flex mx-auto">
+                    <input type="email" placeholder="enter your email to suscribe" class="p-4 border-0 grow">
+                    <button type="submit" class="bg-sky-500 p-4">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16">
+        <div class="container mx-auto">
+            <h1 class="title">our <span>contact us</span></h1>
+            <h2 class="uppercase mt-32 mb-16">sign up for <span class="text-orange-500">email alerts</span></h2>
+            <form action="">
+                <input type="text" placeholder="Write your full name here ..." class="w-full border p-4 focus:border-[#7EC3BB] mb-4">
+                <input type="email" placeholder="Write your email address here ..." class="w-full border p-4 focus:border-[#7EC3BB] mb-4">
+                <textarea name="messge" id="message" placeholder="Write your message here ..." rows="5" class="w-full border p-4 focus:border-[#7EC3BB] mb-4"></textarea>
+                <button type="submit" class="w-[25rem] bg-orange-500 uppercase text-white py-4 block ms-auto">send your message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container mx-auto flex flex-wrap justify-center">
+            <div class="w-full lg:w-1/3 p-4">
+                <h2 class="uppercase mb-8">contact <span class="text-orange-500">info</span></h2>
+                <div class="mb-4">
+                    <p class="text-orange-500"><i class="fa-solid fa-phone"></i> Telephone</p>
+                    <p>09238459430</p>
+                </div>
+                <div class="mb-4">
+                    <p class="text-orange-500"><i class="fa-solid fa-location-pin"></i> Address</p>
+                    <p>234, Blue Spuce Canada</p>
+                </div>
+                <div class="mb-4">
+                    <p class="text-orange-500"><i class="fa-solid fa-envelope"></i> Email</p>
+                    <p>demo@gmail.com</p>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3 p-4">
+                <h2 class="uppercase mb-8">latest <span class="text-orange-500">blog posts</span></h2>
+                <div class="mb-4">
+                    <p class="text-orange-500">Nov-9, 2024</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, rem.</p>
+                </div>
+                <div class="mb-4">
+                    <p class="text-orange-500">Oct-12, 2023</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, rem.</p>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3 p-4">
+                <h2 class="uppercase mb-8">photo <span class="text-orange-500">stream</span></h2>
+                <div class="flex justify-between mb-4">
+                    <img src="https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg" alt="" class="w-1/5">
+                    <img src="https://cdn.pixabay.com/photo/2018/07/20/14/02/grapes-3550733_1280.jpg" alt="" class="w-1/5">
+                    <img src="https://cdn.pixabay.com/photo/2023/05/31/11/15/fish-8031138_1280.jpg" alt="" class="w-1/5">
+                    <img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg" alt="" class="w-1/5">
+                </div>
+                <h2 class="uppercase mb-8">follow <span class="text-orange-500">Us</span></h2>
+                <div>
+                    <i class="fa-brands fa-facebook text-gray-500 text-3xl pr-4 cursor-pointer hover:text-orange-500"></i>
+                    <i class="fa-brands fa-square-instagram text-gray-500 text-3xl pr-4 cursor-pointer hover:text-orange-500"></i>
+                    <i class="fa-brands fa-twitter text-gray-500 text-3xl pr-4 cursor-pointer hover:text-orange-500"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="text-center bg-gray-400 py-8 text-xs">
+        <p>Copyright &copy; 2014 - All Rights Reserved.Design and Developed By Themefisher</p>
+    </div>
+
+    <div id="up" class="bg-orange-500 w-[70px] h-[70px] rounded-full flex justify-center items-center cursor-pointer fixed end-12 bottom-12 z-50 transition-all duration-700 hidden">
+        <i class="fa-solid fa-chevron-up text-4xl text-white"></i>
+    </div>
+
+    <!-- owlcarousel js -->
+    <script src="jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
